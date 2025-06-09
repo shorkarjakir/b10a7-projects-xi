@@ -5,7 +5,7 @@ const NavBar = () => {
 
 
     return (
-        <div className='flex justify-between items-center mt-8 mb-5'>
+        <div className='flex justify-between ml-4 mr-4 items-center mt-8 mb-5'>
             <div className=''>
                 <img src={logo} alt="Logo" />
             </div>

@@ -2,3 +2,8 @@
 #root {
   max-width: 1280px;
 }
+
+.footer-section a:hover{
+  cursor: active;
+  color: white;
+}

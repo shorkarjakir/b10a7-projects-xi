@@ -1,8 +1,8 @@
 
 
 const Newsletter = () => {
-    return (
-        <div className="flex mx-auto max-w-5xl flex-col items-center gap-3 justify-center p-12 bg-gray-100 rounded-lg shadow-lg">
+    return ( 
+        <div className="flex mx-auto absolute left-36 mt-36 w-5xl flex-col items-center gap-3 justify-center p-12 bg-gray-100 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-black">Subscribe to our Newsletter</h2>
             <p className="text-black opacity-70">Get the latest updates and news right in your inbox!</p>
             <form className="flex gap-4 mt-3">
