@@ -5,7 +5,7 @@ const NavBar = () => {
 
 
     return (
-        <div className='flex justify-between items-center mt-8 mr-8 mb-5'>
+        <div className='flex justify-between items-center mt-8 mb-5'>
             <div className=''>
                 <img src={logo} alt="Logo" />
             </div>
@@ -16,7 +16,7 @@ const NavBar = () => {
                     <li><a href="">Teams</a></li>
                     <li><a href="">Schedules</a></li>
                 </ul>
-                <div className='flex p-2 hover:bg-amber-100 gap-3 ml-15 font-semibold text-primary text-[20px] border-2 rounded-xl'>
+                <div className='flex p-2 gap-3 ml-15 font-semibold text-primary text-[20px] border-2 rounded-xl'>
                     <span>0</span>
                     <button className='flex gap-3 items-center'>Coin <BsCoin /></button>
                    

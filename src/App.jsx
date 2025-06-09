@@ -1,5 +1,7 @@
 import './App.css'
+import Available from './Components/Available'
 import Banner from './Components/Banner'
+import Newsletter from './Components/Newsletter'
 import Navigation from './Navigation/NavBar'
 
 function App() {
@@ -10,6 +12,9 @@ function App() {
       <div>
           <Navigation></Navigation>
           <Banner></Banner>
+          <Available></Available>
+
+          <Newsletter></Newsletter>
       </div>
     </>
   )
