@@ -15,7 +15,7 @@ const Players = () => {
    } ,[])
    
     return (
-        <div className="grid lg:grid-cols-3 gap-4 p-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-4">
             {
                 players.map((player) => <Player key={player.playerId} player={player}></Player>)
             }
