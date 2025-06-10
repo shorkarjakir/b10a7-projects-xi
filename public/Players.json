@@ -1,0 +1,134 @@
+{
+  "players": [
+    {
+      "playerId": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://i.ibb.co/Fk63TXRz/Virat-Kohli-during-the-India-vs-Aus-4th-Test-match-at-Narendra-Modi-Stadium-on-09-March-2023.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 2,
+      "name": "Steve Smith",
+      "country": "Australia",
+      "image": "https://i.ibb.co/G4pNPQs3/STEVE-SMITH-11705303043.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1800000
+    },
+    {
+      "playerId": 3,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "image": "https://i.ibb.co/5gX8HyfY/Jasprit-Bumrah-in-PMO-New-Delhi.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1700000
+    },
+    {
+      "playerId": 4,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://i.ibb.co/0jyvXXNJ/BEN-STOKES-11704837023-cropped.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm fast-medium",
+      "biddingPrice": 1900000
+    },
+    {
+      "playerId": 5,
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co/Pzf31Kqb/Kane-Williamson.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off spin",
+      "biddingPrice": 1600000
+    },
+    {
+      "playerId": 6,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://i.ibb.co/V0K8mGQh/Rashid-Khan-celebrating.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1500000
+    },
+    {
+      "playerId": 7,
+      "name": "David Warner",
+      "country": "Australia",
+      "image": "https://i.ibb.co/nMKV5b2t/DAVID-WARNER-11704782453.jpg",
+      "role": "Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1750000
+    },
+    {
+      "playerId": 8,
+      "name": "Trent Boult",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co/WNFNPCFP/2018-02-03-22-23-14-AUSv-NZL-T20-AUS-innings-SCG-39533156665.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Left-arm fast-medium",
+      "biddingPrice": 1400000
+    },
+    {
+      "playerId": 9,
+      "name": "Jos Buttler",
+      "country": "England",
+      "image": "https://i.ibb.co/W41Fc4yL/Jos-Buttler-2017.jpg",
+      "role": "Wicketkeeper-Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "N/A",
+      "biddingPrice": 1650000
+    },
+    {
+      "playerId": 10,
+      "name": "Kagiso Rabada",
+      "country": "South Africa",
+      "image": "https://i.ibb.co/27hTYS2W/KAGISO-RABADA-15519760378.jpg",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1550000
+    },
+    {
+      "playerId": 11,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co/HT2QMLM4/Babar-azam-2023.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off spin",
+      "biddingPrice": 1850000
+    },
+    {
+      "playerId": 12,
+      "name": "Glenn Maxwell",
+      "country": "Australia",
+      "image": "https://i.ibb.co/pBhd6rfr/Glenn-Maxwell-3.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off spin",
+      "biddingPrice": 1450000
+    },
+    {
+      "playerId": 13,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "image": "https://i.ibb.co/mFCYpZ0R/Shakib-Al-Hasan-4-cropped.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm orthodox",
+      "biddingPrice": 1350000
+    }
+  ]
+}
