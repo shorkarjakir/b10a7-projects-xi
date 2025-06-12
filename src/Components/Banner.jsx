@@ -1,7 +1,7 @@
 import bannerImage from '../assets/bg-shadow.png';
 import bannerImage2 from '../assets/banner-main.png';
 
-const Banner = () => {
+const Banner = ({claimCredit}) => {
     return (
         <div
             className=''
@@ -20,7 +20,7 @@ const Banner = () => {
                 <img src={bannerImage2} alt="" />
                 <h3 className='text-3xl text-white font text-center'>Assemble Your Ultimate Dream 11 Cricket Team</h3>
                 <p className='text-xl text-white opacity-70'>Beyond Boundaries Beyond Limits</p>
-                <button className='bg-amber-300 p-4 rounded-2xl font-bold'>Claim Free Credit</button>
+                <button onClick={() => claimCredit()} className='bg-amber-300 p-4 rounded-2xl font-bold'>Claim Free Credit</button>
             </div>
         </div>
     );

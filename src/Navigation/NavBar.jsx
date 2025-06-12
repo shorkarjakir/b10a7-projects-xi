@@ -1,7 +1,7 @@
 import logo from '../assets/logo.png';
 import { BsCoin } from "react-icons/bs";
 
-const NavBar = () => {
+const NavBar = ({claim}) => {
 
 
     return (
@@ -17,7 +17,7 @@ const NavBar = () => {
                     <li><a href="">Schedules</a></li>
                 </ul>
                 <div className='flex p-2 gap-3 ml-15 font-semibold text-primary text-[20px] border-2 rounded-xl'>
-                    <span>0</span>
+                    <span>{claim}</span>
                     <button className='flex gap-3 items-center'>Coin <BsCoin /></button>
                    
                 </div>
