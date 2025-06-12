@@ -44,7 +44,7 @@ function App() {
     return (
       <div className="mt-4">
         {selectedPlayer.map((player) => (
-          <Selected key={player.playerId} player={player}></Selected>
+          <Selected key={player.playerId} player={player} deletePlayer={deletePlayer}></Selected>
         ))}
       </div>
     );
@@ -52,6 +52,11 @@ function App() {
 
   const showAvailablePlayers = () => setView('available');
   const showSelectedPlayers = () => setView('selected');
+
+  const deletePlayer = (playerId) => {
+    const updatedPlayers = selectedPlayer.filter(player => player.playerId !== playerId);
+    setSelectedPlayer(updatedPlayers);
+  }
 
   return (
     <>

@@ -1,9 +1,8 @@
 import { MdDelete } from "react-icons/md";
 
-const Selected = ({player}) => {
-    const { name, image, bowlingType } = player;
-    console.log('Selected player:', player);
-   
+const Selected = ({player, deletePlayer}) => {
+    const { name, image, bowlingType, playerId } = player;
+
     return (
         <div className="flex mx-auto justify-between max-w-[1200px] border items-center bg-slate-100 p-4 rounded-lg shadow-lg mb-2">
             <div className="flex ml-1 gap-3">
@@ -14,7 +13,7 @@ const Selected = ({player}) => {
                 </div>
             </div>
             <div>
-                <button className="text-amber-700 text-3xl"><MdDelete /></button>
+                <button onClick={() => deletePlayer(playerId)} className="text-amber-700 text-3xl"><MdDelete /></button>
             </div>
         </div>
     );
