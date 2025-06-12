@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { ToastContainer, toast } from 'react-toastify';
 import Available from './Components/Available'
 import Banner from './Components/Banner'
 import Footer from './Components/Footer'
@@ -15,25 +16,61 @@ function App() {
   const [view, setView] = useState('available');
   const [tolalPlayers, setTotalPlayers] = useState(0);
 
+
   const claimCredit = () => {
     setClaim(Math.floor(Math.random() * 10000000) + claim );
-    alert(`Congratulations! You have claimed ${claim} credits.`);
+    toast.success(`Congratulations! You have claimed ${claim} credits.`, {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      className: "text-green-500",
+    });
   }
 
   const choosePlayer = (biddingPrice, player) => {
 
     if (biddingPrice > claim) {
-      alert("You don't have enough credits to choose this player.");
+      toast.error("Insufficient credits to choose this player.", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        className: "text-red-500",
+      });
       return;
     }
     if (selectedPlayer.includes(player)) {
-      alert("You have already chosen this player.");
+      toast.dark("You have already chosen this player."), {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        className: "text-red-500",
+      }
+      return;
+    }
+    if (selectedPlayer.length >= 11) {
+      toast.error("You can only select up to 11 players.", {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        className: "text-red-500",
+      });
       return;
     }
     const selectedPlayers = [...selectedPlayer, player];
     setSelectedPlayer(selectedPlayers);
     setClaim(claim - biddingPrice);
-    console.log(selectedPlayers);
   }
 
   const chossenPlayer = () => {
@@ -46,6 +83,7 @@ function App() {
         {selectedPlayer.map((player) => (
           <Selected key={player.playerId} player={player} deletePlayer={deletePlayer}></Selected>
         ))}
+        <button onClick={() => showAvailablePlayers()} className="ml-8 mt-2 font-bold border-2 p-4 bg-yellow-500 rounded-lg text-base">Add More Players</button>
       </div>
     );
   }
@@ -53,9 +91,19 @@ function App() {
   const showAvailablePlayers = () => setView('available');
   const showSelectedPlayers = () => setView('selected');
 
-  const deletePlayer = (playerId) => {
+  const deletePlayer = (playerId, biddingPrice) => {
     const updatedPlayers = selectedPlayer.filter(player => player.playerId !== playerId);
     setSelectedPlayer(updatedPlayers);
+    setClaim(claim + biddingPrice);
+    toast.info(`Player removed. ${biddingPrice} credits refunded.`, {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      className: "text-blue-500",
+    });
   }
 
   return (
@@ -76,6 +124,7 @@ function App() {
             <Newsletter></Newsletter>
           </div>
           <Footer></Footer>
+          <ToastContainer />
       </div>
     </>
   )
