@@ -10,6 +10,7 @@ const Players = ({choosePlayer, setTotalPlayers}) => {
             const res = await fetch('/public/Players.json');
             const data = await res.json();
             setPlayers(data.players);
+            setTotalPlayers(data.players.length);
             // console.log(data);
         }
         fetchPlayers();
@@ -24,8 +25,9 @@ const Players = ({choosePlayer, setTotalPlayers}) => {
                  player={player} 
                  choosePlayer={choosePlayer}>
                  </Player>)
+
             }
-            {setTotalPlayers(players.length)}
+            
         </div>
     );
 };

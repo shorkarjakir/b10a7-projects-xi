@@ -13,8 +13,6 @@ const Newsletter = () => {
         setEmail('');
     };
 
-    console.log(email);
-
     return ( 
         <div className="relative">
             <div className="flex z-10 absolute left-36 mt-36 mx-auto w-5xl flex-col items-center gap-3 justify-center p-12 bg-gray-100 rounded-lg shadow-lg">
