@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { ToastContainer, toast } from 'react-toastify';
 import Available from './Components/Available'
 import Banner from './Components/Banner'
@@ -107,21 +105,6 @@ function App() {
       className: "text-blue-500",
     });
   }
-
-const firebaseConfig = {
-  apiKey: "AIzaSyD8n6zVwqy3qMbYJL5NwfxthGZZe1sWlC8",
-  authDomain: "b10a7-projects.firebaseapp.com",
-  projectId: "b10a7-projects",
-  storageBucket: "b10a7-projects.firebasestorage.app",
-  messagingSenderId: "989617442484",
-  appId: "1:989617442484:web:c34de900454c99002991e1",
-  measurementId: "G-5FCBNS72CB"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-analytics;
 
   return (
     <>
