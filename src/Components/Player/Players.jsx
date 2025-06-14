@@ -14,7 +14,7 @@ const Players = ({choosePlayer, setTotalPlayers}) => {
             // console.log(data);
         }
         fetchPlayers();
-   });
+   }, [setTotalPlayers]);
    
     return (
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-4">
