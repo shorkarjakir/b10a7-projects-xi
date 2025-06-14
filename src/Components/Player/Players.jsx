@@ -7,7 +7,7 @@ const Players = ({choosePlayer, setTotalPlayers}) => {
 
    useEffect(() => {
         const fetchPlayers = async () => {
-            const res = await fetch('/public/Players.json');
+            const res = await fetch('/Players.json');
             const data = await res.json();
             setPlayers(data.players);
             setTotalPlayers(data.players.length);
